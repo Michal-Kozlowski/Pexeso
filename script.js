@@ -4,9 +4,7 @@ for (var i = ul.children.length; i >= 0; i--) {
 };
 
 var h = $(window).height();
-console.log(h);
 var w = $(window).width();
-console.log(w);
 var width = 10*(h-95-14)/7/0.745;
 if (width <= w) {
     $("main").css("width", width);
