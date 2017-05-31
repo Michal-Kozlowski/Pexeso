@@ -3,6 +3,10 @@ for (var i = ul.children.length; i >= 0; i--) {
     ul.appendChild(ul.children[Math.random() * i | 0]);
 };
 
+var h = $(window).height();
+console.log(h);
+$("main").css("width", 10*(h-95-14)/7/0.745);
+
 var x = 0;
 var player = 0;
 var player1 = 0;
