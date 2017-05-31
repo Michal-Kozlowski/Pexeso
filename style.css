@@ -15,6 +15,10 @@ body {
   max-height: 100%;
   background: url("images/wallpaper.jpg"); }
 
+main {
+  width: 100%;
+  margin: auto; }
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -23,7 +27,9 @@ ul {
 
 li {
   background: url("images/the-cloud.jpg");
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
   float: left;
   width: 10%;
@@ -52,7 +58,7 @@ img {
   z-index: 1; }
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   right: 0;
   width: 100%;
