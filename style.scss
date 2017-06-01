@@ -1,0 +1,114 @@
+$color1: #87b5ff;
+
+* {
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  height: 100%;
+  max-height: 100%;
+  background: url("images/wallpaper.jpg")
+}
+
+main {
+  width: 100%;
+  margin: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+li {
+  background: url("images/the-cloud.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  float: left;
+  width: 10%;
+  padding: 0;
+  padding-top: 7.45%;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-left: 1px;
+  border-right: 1px;
+  border-style: solid;
+  border-color: $color1;
+  opacity: 1;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+}
+
+img {
+  width: 100.1%;
+  display: block;
+}
+
+.back {
+  background: blue;
+  z-index: 1;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.player {
+  background: $color1;
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 50%;
+  height: 95px;
+  padding-top: 35px;
+  margin: 0;
+  float: left;
+}
+
+.player1 {
+  text-shadow: 2px 0px 8px green, 0px 0px 4px green, 0px 0px 3px white;
+}
+
+.player2 {
+  text-shadow: 2px 0px 8px red, 0px 0px 4px grey;
+}
+
+@mixin filter($color) {
+  filter: brightness(108%) drop-shadow(0px 0px 5px $color);
+  z-index: 1;
+}
+
+.li1 {
+  &:hover {
+    @include filter(green);
+  }
+}
+
+.li2:hover {
+  @include filter(red);
+}
