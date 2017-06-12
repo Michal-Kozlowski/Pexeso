@@ -30,17 +30,12 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border: #87b5ff 1px solid;
   position: relative;
   float: left;
   width: 10%;
   padding: 0;
   padding-top: 7.45%;
-  border-top: 1px;
-  border-bottom: 1px;
-  border-left: 1px;
-  border-right: 1px;
-  border-style: solid;
-  border-color: #87b5ff;
   opacity: 1; }
   li img {
     position: absolute;
@@ -76,17 +71,17 @@ footer {
   float: left; }
 
 .player1 {
-  text-shadow: 2px 0px 8px green, 0px 0px 4px green, 0px 0px 3px white; }
+  text-shadow: 2px 0 8px green, 0 0 4px green, 0 0 3px white; }
 
 .player2 {
-  text-shadow: 2px 0px 8px red, 0px 0px 4px grey; }
+  text-shadow: 2px 0 8px red, 0 0 4px grey; }
 
 .li1:hover {
-  filter: brightness(108%) drop-shadow(0px 0px 5px green);
+  filter: brightness(108%) drop-shadow(0 0 5px green);
   z-index: 1; }
 
 .li2:hover {
-  filter: brightness(108%) drop-shadow(0px 0px 5px red);
+  filter: brightness(108%) drop-shadow(0 0 5px red);
   z-index: 1; }
 
 /*# sourceMappingURL=style.css.map */
